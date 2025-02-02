@@ -76,19 +76,6 @@ J'ai ajouté la gestion de la langue en créant un LanguageContext. Ce contexte 
 ![Capture2](https://github.com/user-attachments/assets/6f2fefc4-05cf-4cb5-8453-205418b3e9b7)
 
 
-### Exercice 3 : Hooks Personnalisés
-#### Objectif : Créer des hooks réutilisables
-
-- [ ] 3.1 Créer le hook useDebounce
-- [ ] 3.2 Créer le hook useLocalStorage
-- [ ] 3.3 Documenter votre solution ici
-
-_Votre réponse pour l'exercice 3 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
-
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
 
@@ -97,10 +84,14 @@ Expliquez votre solution ici
 - [ ] 4.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 4 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+
+currentPage : Suit le numéro de la page actuelle.
+nextPage et previousPage : Modifient currentPage pour naviguer entre les pages, en récupérant les produits correspondants via l'API.
+reload : Permet de rafraîchir les produits en fonction de la page actuelle.
+![Capture55](https://github.com/user-attachments/assets/d664723e-8989-4982-a199-d977f2d82b2e)
+![Capture3](https://github.com/user-attachments/assets/9ce31ce7-7fec-4bf8-96e2-25b876464e8f)
+![Capture4](https://github.com/user-attachments/assets/429676c3-5fea-47b3-b5a6-456a14267517)
+
 
 ## Rendu
 
