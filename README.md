@@ -68,10 +68,11 @@ Objectif : Implémenter une recherche en temps réel.
 - [ ] 2.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 2 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+
+Objectif : Gérer les préférences de langue.
+
+J'ai ajouté la gestion de la langue en créant un LanguageContext. Ce contexte permet de partager la langue sélectionnée 
+
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
