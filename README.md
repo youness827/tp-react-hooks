@@ -52,10 +52,13 @@ Pour chaque exercice :
 - [ ] 1.3 Documenter votre solution ici
 
 _Votre réponse pour l'exercice 1 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+Objectif : Implémenter une recherche en temps réel.
+
+1.1 J'ai utilisé la technique du Lifting State Up pour déplacer l'état searchTerm du composant enfant ProductSearch vers le parent App, permettant de partager ce terme avec ProductList, où il est passé sous le nom filteringTerm pour filtrer la liste des produits.
+
+1.2 La technique du debounce est utilisée pour éviter les mises à jour fréquentes lors de la saisie.
+
+
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue

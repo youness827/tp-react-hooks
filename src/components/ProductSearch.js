@@ -1,22 +1,28 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from '../App';
+import { LanguageContext } from '../App';
 
-const ProductSearch = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+const ProductSearch = ({ setSearchTerm }) => {
   const { isDarkTheme } = useContext(ThemeContext);
-  // TODO: Exercice 2.1 - Utiliser le LanguageContext
-  
-  // TODO: Exercice 1.2 - Utiliser le hook useDebounce
-  
+  const { selectedlangue } = useContext(LanguageContext);
+
   return (
     <div className="mb-4">
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Rechercher un produit..."
-        className={`form-control ${isDarkTheme ? 'bg-dark text-light' : ''}`}
-      />
+      {/* Search input with dynamic placeholder and styling */}
+      <div className="input-group">
+        <input
+          type="text"
+          onChange={(e) => setSearchTerm(e.target.value)} // Updating search term on input change
+          placeholder={selectedlangue === "Fr" ? "Rechercher un produit..." : "Search for a product..."} // Dynamic placeholder based on language
+          className={`form-control ${isDarkTheme ? 'bg-dark text-light' : 'bg-light'}`} // Dark theme support
+        />
+        <button
+          className={`btn ${isDarkTheme ? 'btn-outline-light' : 'btn-outline-dark'}`} // Button style based on theme
+          onClick={() => setSearchTerm('')} // Clear search term on button click
+        >
+          <i className="bi bi-x-circle"></i> {/* Icon to clear input */}
+        </button>
+      </div>
     </div>
   );
 };
