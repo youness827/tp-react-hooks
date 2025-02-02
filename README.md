@@ -72,6 +72,8 @@ _Votre réponse pour l'exercice 2 :_
 Objectif : Gérer les préférences de langue.
 
 J'ai ajouté la gestion de la langue en créant un LanguageContext. Ce contexte permet de partager la langue sélectionnée 
+![Capture1](https://github.com/user-attachments/assets/673cca92-8e9c-4d54-b4bd-47c890097dd6)
+![Capture2](https://github.com/user-attachments/assets/6f2fefc4-05cf-4cb5-8453-205418b3e9b7)
 
 
 ### Exercice 3 : Hooks Personnalisés
