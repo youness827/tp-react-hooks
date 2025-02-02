@@ -59,7 +59,6 @@ Objectif : Implémenter une recherche en temps réel.
 1.2 La technique du debounce est utilisée pour éviter les mises à jour fréquentes lors de la saisie.
 
 
-![Capture1](https://github.com/user-attachments/assets/a63469e2-7dd3-4757-b0eb-806fb53d9669)
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
